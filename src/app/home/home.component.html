@@ -1,0 +1,14 @@
+<div class="main-wrapper">
+    <div class="heading">
+        <app-welcome [countOfOTransactions]="countOfOTransactions"></app-welcome>
+    </div>
+    <!-- Here I create cards and fill them with data in a for loop to make it scalable and to show that I know this method -->
+    <div class="report-cards">
+        <app-report-card 
+        *ngFor=" let operType of operationTypes; let i = index"
+        [operationType] = "opNameBeautify(operType)"
+        [countOfOperations] = "getNumOfOps(operType)"
+        [tabNo] = "i"
+        ></app-report-card>
+    </div>
+</div>
