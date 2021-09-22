@@ -1,8 +1,14 @@
 .count{
     font-weight: bold;
+    text-align: left;
+}
+.name{
+    text-align: left;
 }
 .seeall_btn{
     margin-left: auto;
     margin-right: 10px;
-    width: 200px;
+    min-width: 100px;
+    max-width: 200px;
+    width: 10vw;
 }

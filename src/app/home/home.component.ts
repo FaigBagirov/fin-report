@@ -15,8 +15,9 @@ export class HomeComponent implements OnInit {
   //where report specialist can choose all operation types he wants to see
   operationTypes = ["income", "investment", "outcome", "loan"];
 
-  //It could be done with regex or just with mapping two arrays or with an object keys
-  //but I've chosen this just because I like it to be universal and because I'm not good at regex coding
+    // someone may think that it's not good to beautify the text this way
+    // but the reason is that in future the list of operation types may/should be dynamic,
+    // so I have to make it automated
   opNameBeautify(opType: string){
     if (opType.slice(-1) !== "s"){
       opType+='s';
